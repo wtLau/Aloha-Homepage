@@ -1,0 +1,65 @@
+body {
+  margin: 8px auto;
+  width: 1240px;
+}
+header {
+  text-align: center
+}
+header img, header nav{
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+header img {
+  width: 70px;
+}
+nav ul {
+  padding-left: 0px;
+}
+nav li {
+  display: inline-block;
+}
+#logo {
+  float: left;
+  width: 60;
+}
+#cart {
+  float: right;
+}
+.herotext {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  margin: 0px auto;
+  background: url(../Asset/images/flower-bkgd.jpg);
+  background-size: 100%;
+  height: 300px;
+}
+.vertical-align {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.handcraft {
+  text-align:center;
+  font-size: 12px;
+  margin: 10px auto;
+}
+.mostloved {
+  text-align:center;
+  font-size: 12px;
+  margin: 10px auto;
+}
+.signup {
+  text-align:center;
+  font-size: 12px;
+  margin: 10px auto;
+}
+button:active,
+button:hover {
+  background-color: lightblue;
+}
