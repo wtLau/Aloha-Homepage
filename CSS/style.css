@@ -31,10 +31,16 @@ nav li {
   position: relative;
   font-size: 12px;
   margin: 0px auto;
-  background: url(../Asset/images/flower-bkgd.jpg);
+  background-image: url(../Asset/images/flower-bkgd.jpg);
   background-size: contain;
   background-repeat: repeat;
   height: 300px;
+}
+.bannergirl {
+  background-image: url(../Asset/images/banner-girl.png);
+  background-size: 300px auto;background-repeat: no-repeat;background-position: center;background-size: contain;
+  height: 300px;
+  width: auto;
 }
 .vertical-align {
   margin: 0;
