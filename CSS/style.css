@@ -1,9 +1,8 @@
 body {
   margin: 8px auto;
-  width: 1240px;
 }
 header {
-  text-align: center
+  text-align: center;
 }
 header img, header nav{
   display: inline-block;
@@ -33,12 +32,13 @@ nav li {
   font-size: 12px;
   margin: 0px auto;
   background: url(../Asset/images/flower-bkgd.jpg);
-  background-size: 100%;
+  background-size: contain;
+  background-repeat: repeat;
   height: 300px;
 }
 .vertical-align {
   margin: 0;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,17 +49,126 @@ nav li {
   font-size: 12px;
   margin: 10px auto;
 }
+.handcraft_note {
+  color: rgb(126, 126, 126);
+}
+.category {
+  display: block;
+  text-align: center;
+  height: 350px;
+  margin: 0px auto;
+}
+#padding {
+  padding-left: 0;
+}
+.category_upper {
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+}
+.float_right {
+  width: 50%;
+  float: right;
+}
+.men {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 50%;
+  background-image: url(../Asset/images/mens-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.trends {
+  position: relative;
+  height: 150px;
+  width: 50%;
+  float: left;
+  background-image: url(../Asset/images/trends-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.glasses {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 50%;
+  background-image: url(../Asset/images/glasses-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.category_lower {
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+}
+.sale {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 50%;
+  background-image: url(../Asset/images/sale-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bags {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 50%;
+  background-image: url(../Asset/images/bags-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.women {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 50%;
+  background-image: url(../Asset/images/womens-category.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .mostloved {
+  display: block;
   text-align:center;
   font-size: 12px;
   margin: 10px auto;
+  height: 400px;
+}
+.products {
+  display: inline-block;
+  height: 300px;
+  width: 200px;
+  margin: 20px;
 }
 .signup {
-  text-align:center;
+  display: block;
+  text-align: center;
+  height: 200px;
   font-size: 12px;
   margin: 10px auto;
+  background-image: url(../Asset/images/wave-bkgd.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 button:active,
 button:hover {
   background-color: lightblue;
+}
+footer {
+  display: block;
+  height: 200px;
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+.footer_block {
+  height: 150px;
+  padding: 20px auto;
+}
+.footer_left {
+  float: left;
+}
+.footer_right {
+  float: right;
 }
