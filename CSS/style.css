@@ -28,19 +28,15 @@ nav li {
 .herotext {
   display: block;
   text-align: center;
-  position: relative;
   font-size: 12px;
   margin: 0px auto;
-  background-image: url(../Asset/images/flower-bkgd.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),
+  url(../Asset/images/banner-girl.png),
+  url(../Asset/images/flower-bkgd.jpg);
+  background-position: center;
   background-size: contain;
-  background-repeat: repeat;
+  background-repeat: repeat, no-repeat;
   height: 300px;
-}
-.bannergirl {
-  background-image: url(../Asset/images/banner-girl.png);
-  background-size: 300px auto;background-repeat: no-repeat;background-position: center;background-size: contain;
-  height: 300px;
-  width: auto;
 }
 .vertical-align {
   margin: 0;
@@ -58,96 +54,62 @@ nav li {
 .handcraft_note {
   color: rgb(126, 126, 126);
 }
-.category {
-  display: block;
+
+/*Men Trends Glasses Sales Bags Dresses Selection*/
+
+.container-selection {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.container-product {
+  padding: 5px;
+  margin: 5px;
+  line-height: 50px;
   text-align: center;
-  height: 350px;
-  margin: 0px auto;
 }
-#padding {
-  padding-left: 0;
-}
-.category_upper {
-  display: block;
-  height: 150px;
-  margin: 0 auto;
-}
-.float_right {
-  width: 50%;
-  float: right;
-}
-.men {
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 50%;
-  background-image: url(../Asset/images/mens-category.jpg);
+.container-product:nth-child(n) {
+  background: url("../Asset/images/mens-category.jpg") no-repeat;
   background-size: contain;
-  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
 }
-.trends {
-  position: relative;
-  height: 150px;
-  width: 50%;
-  float: left;
-  background-image: url(../Asset/images/trends-category.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.container-product:nth-child(1n) {
+  background: url(../Asset/images/trends-category.jpg);
+  flex: 1 0 0;
 }
-.glasses {
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 50%;
-  background-image: url(../Asset/images/glasses-category.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.container-product:nth-child(2n) {
+  background: url(../Asset/images/glasses-category.jpg);
+  flex: 1 0 0;
 }
-.category_lower {
-  display: block;
-  height: 150px;
-  margin: 0 auto;
+.container-product:nth-child(3n) {
+  background: url(../Asset/images/sale-category.jpg);
 }
-.sale {
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 50%;
-  background-image: url(../Asset/images/sale-category.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.container-product:nth-child(4n) {
+  background: url(../Asset/images/bags-category.jpg);
 }
-.bags {
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 50%;
-  background-image: url(../Asset/images/bags-category.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+.container-product:nth-child(5n) {
+  background: url(../Asset/images/womens-category.jpg);
 }
-.women {
-  display: inline-block;
-  position: relative;
-  height: 150px;
-  width: 50%;
-  background-image: url(../Asset/images/womens-category.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
+/*most loved product*/
+
 .mostloved {
   display: block;
   text-align:center;
   font-size: 12px;
   margin: 10px auto;
-  height: 400px;
+  height: 100px;
 }
-.products {
-  display: inline-block;
-  height: 300px;
-  width: 200px;
-  margin: 20px;
-}
+
+/*productitems*/
+
+
+/*SignUp*/
+
 .signup {
   display: block;
   text-align: center;
@@ -155,13 +117,15 @@ nav li {
   font-size: 12px;
   margin: 10px auto;
   background-image: url(../Asset/images/wave-bkgd.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;background-repeat: no-repeat;
 }
 button:active,
 button:hover {
   background-color: lightblue;
 }
+
+/*footer*/
+
 footer {
   display: block;
   height: 200px;
@@ -177,4 +141,11 @@ footer {
 }
 .footer_right {
   float: right;
+}
+
+@media all and (min-width: 480px){
+  
+}
+@media all and (min-width: 680px) {
+
 }

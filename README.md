@@ -1,9 +1,9 @@
-# Aloha Project
+# Brian's Aloha Project
 
-This is my description
+This is my frist project at RED.
 
 ## what I learned
 
-- one
-- two
-- three
+- HTML
+- CSS
+- CSS3
