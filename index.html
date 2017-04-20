@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 
 <head>
-  <link href="CSS/style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <title>Brian's Aloha Homepage Project</title>
 </head>
 
 <body>
+  <!-----------------nav------------------>
   <header>
-    <img id="logo" src="Asset/images/aloha-logo.svg">
-    <nav>
-      <ul>
-        <li>
-          <a href="">ABOUT</a>
-        </li>
-        <li>
-          <a href="">SHOP</a>
-        </li>
-        <li>
-          <a href="">FEAUTURE</a>
-        </li>
-        <li>
-          <a href="">UPDATE</a>
-        </li>
+    <nav class="container-nav">
+      <img class="nav-img" src="Asset/images/aloha-logo.svg">
+      <ul class="container-nav-menu">
+        <li class="container-nav-menu-child">
+          <a href="#">About</a></li>
+        <li class="container-nav-menu-child">
+          <a href="#">Shop</a></li>
+        <li class="container-nav-menu-child">
+          <a href="#">Feature</a></li>
+        <li class="container-nav-menu-child">
+          <a href="#">Update</a></li>
       </ul>
+      <img class="nav-img" src="Asset/images/cart-icon.svg" alt="shopping-cart">
     </nav>
-    <img id="cart" src="Asset/images/cart-icon.svg">
   </header>
+
+<!-----------------Banner------------------>
+
   <div class="herotext">
-      <div class="vertical-align">
-        <h6>NEW COLLECTION</h6>
-        <h1>Spring/Summer 2016</h1>
+    <div class="vertical-align">
+      <h6>NEW COLLECTION</h6>
+      <h1>Spring/Summer 2016</h1>
     </div>
   </div>
+
+<!-----------------Hand-Crafted Style------------------>
+
   <div class="handcraft">
     <h3><i>Hand-Crafted </i><b>Styles</b></h3>
     <p class="handcraft_note">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br> current selection of products or sign-up
       for updates below.</p>
   </div>
-    <ul class="container-selection">
-      <li class="container-product">
-        <h4><a href="#">MEN's</a></h4>
-      </li>
-      <li class="container-product">
-        <h4><a href="#">TRENDS</a></h4>
-      </li>
-      <li class="container-product">
-        <h4><a href="#">GLASSES</a></h4>
-      </li>
-      <li class="container-product">
-        <h4><a href="#">SALE</a></h4>
-      </li>
-      <li class="container-product">
-        <h4><a href="#">BAGS</a></h4>
-      </li>
-      <li class="container-product">
-        <h4><a href="#">WOMEN's</a></h4>
-      </li>
-    </ul>
+
+<!-----------------category------------------>
+
+  <ul class="container-category">
+    <li class="container-category-men">
+      <h4><a href="#">MEN's</a></h4> </li>
+    <li class="container-category-trends">
+      <h4><a href="#">TRENDS</a></h4></li>
+    <li class="container-category-glasses">
+      <h4><a href="#">GLASSES</a></h4></li>
+    <li class="container-category-sale">
+      <h4><a href="#">SALE</a></h4></li>
+    <li class="container-category-bags">
+      <h4><a href="#">BAGS</a></h4></li>
+    <li class="container-category-women">
+      <h4><a href="#">WOMEN's</a></h4></li>
+  </ul>
+
+<!-----------------Most loved product------------------>
+
   <div class="mostloved">
     <h3>Most-Loved Products</h3>
   </div>
   <div>
     <ul>
       <li class="products">
-        <img src="Asset/images/checked-stretch-dress.jpg" alt="">
+        <img src="Asset/images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
         <p>DRESSES</p>
-        <h3><a href="">Checked Stretch Dress</a></h3>
+        <h3><a href="#">Checked Stretch Dress</a></h3>
         <p>$129.00</p>
       </li>
       <li class="products">
-        <img src="Asset/images/blue-hipster-backpack.jpg" alt="">
+        <img src="Asset/images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
         <p>BAGS</p>
-        <h3><a href="">Blue Hipster Backpack</a></h3>
+        <h3><a href="#">Blue Hipster Backpack</a></h3>
         <p>$69.00</p>
       </li>
       <li class="products">
-        <img src="Asset/images/demin-overall-shorts.jpg" alt="">
+        <img src="Asset/images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
         <p>DEMIN</p>
-        <h3><a href="">Demin Overall Shorts</a></h3>
+        <h3><a href="#">Demin Overall Shorts</a></h3>
         <p>$89.00</p>
       </li>
       <li class="products">
-        <img src="Asset/images/pink-dotted-dress.jpg" alt="">
+        <img src="Asset/images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
         <p>DRESSES</p>
         <h3>
-          <a href="">Pink Dotted Dress</a></h3>
+          <a href="#">Pink Dotted Dress</a></h3>
         <p>$99.00</p>
       </li>
     </ul>
   </div>
+
+<!-----------------Sign up------------------>
+
   <div class="signup">
     <div class="vertical-align">
       <h3>Sign-up for Updates</h3>
@@ -99,6 +106,9 @@
       <button>Subscribe</button>
     </div>
   </div>
+
+<!-----------------footer------------------>
+
   <footer>
     <div class="footer_block">
       <div class="footer_left">

@@ -1,30 +1,39 @@
 body {
   margin: 8px auto;
 }
-header {
-  text-align: center;
+
+/*---------------Nav---------------*/
+
+.container-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-header img, header nav{
-  display: inline-block;
-  height: 50px;
+.nav-img {
+  height: 60px;
   width: auto;
+  margin: 5px;
+  padding: 5px;
 }
-header img {
-  width: 70px;
+.container-nav-menu {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-around;
+  order: 3;
+  margin: 5px;
+  border-top: 1px solid #d7d7d7;
 }
-nav ul {
-  padding-left: 0px;
+.container-nav-menu-child {
+  margin: 5px;
+  padding: 5px;
 }
-nav li {
-  display: inline-block;
+header a {
+    color: #e2574c;
+    text-decoration: none;
+    text-transform: uppercase;
 }
-#logo {
-  float: left;
-  width: 60;
-}
-#cart {
-  float: right;
-}
+/*----------------Banner--------------*/
+
 .herotext {
   display: block;
   text-align: center;
@@ -46,6 +55,9 @@ nav li {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+/*---------Hand Crafted Div-----------*/
+
 .handcraft {
   text-align:center;
   font-size: 12px;
@@ -55,47 +67,53 @@ nav li {
   color: rgb(126, 126, 126);
 }
 
-/*Men Trends Glasses Sales Bags Dresses Selection*/
+/*---------------Category---------------*/
 
-.container-selection {
+.container-category {
   display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  align-content: center;
 }
-.container-product {
-  padding: 5px;
-  margin: 5px;
-  line-height: 50px;
-  text-align: center;
-}
-.container-product:nth-child(n) {
+.container-category-men {
   background: url("../Asset/images/mens-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100px;
   width: 100%;
 }
-.container-product:nth-child(1n) {
-  background: url(../Asset/images/trends-category.jpg);
+.container-category-trends {
+  background: url("../Asset/images/trends-category.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
   flex: 1 0 0;
 }
-.container-product:nth-child(2n) {
-  background: url(../Asset/images/glasses-category.jpg);
+.container-category-glasses {
+  background: url("../Asset/images/glasses-category.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
   flex: 1 0 0;
 }
-.container-product:nth-child(3n) {
-  background: url(../Asset/images/sale-category.jpg);
+.container-category-sale {
+  background: url("../Asset/images/sale-category.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
 }
-.container-product:nth-child(4n) {
-  background: url(../Asset/images/bags-category.jpg);
+.container-category-bags {
+  background: url("../Asset/images/bags-category.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
 }
-.container-product:nth-child(5n) {
-  background: url(../Asset/images/womens-category.jpg);
+.container-category-women {
+  background: url("../Asset/images/womens-category.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 100%;
 }
 
-/*most loved product*/
+/*----------most loved product-----------*/
 
 .mostloved {
   display: block;
@@ -105,10 +123,7 @@ nav li {
   height: 100px;
 }
 
-/*productitems*/
-
-
-/*SignUp*/
+/*--------------SignUp--------------*/
 
 .signup {
   display: block;
@@ -124,7 +139,7 @@ button:hover {
   background-color: lightblue;
 }
 
-/*footer*/
+/*--------------footer--------------*/
 
 footer {
   display: block;
