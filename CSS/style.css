@@ -1,5 +1,6 @@
 body {
   margin: 8px auto;
+  font-size: 12px;
 }
 
 /*---------------Nav---------------*/
@@ -58,13 +59,22 @@ header a {
 
 /*---------Hand Crafted Div-----------*/
 
-.handcraft {
+.container-handcraft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align:center;
-  font-size: 12px;
-  margin: 10px auto;
+  margin: 20px;
+  padding: 30px 0;
 }
-.handcraft_note {
-  color: rgb(126, 126, 126);
+.container-handcraft h3 {
+  font-size: 3rem;
+  color: #2d2d2d;
+}
+.container-handcraft p {
+  color: #2d2d2d;
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
 
 /*---------------Category---------------*/
