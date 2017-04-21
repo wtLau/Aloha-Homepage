@@ -3,15 +3,14 @@
 <head>
   <link rel="stylesheet" href="css/reset.css">
   <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <title>Brian's Aloha Homepage Project</title>
 </head>
-
 <body>
   <!-----------------nav------------------>
   <header>
     <nav class="container-nav">
-      <img class="nav-img" src="Asset/images/aloha-logo.svg">
+      <img class="nav-img-logo" src="Asset/images/aloha-logo.svg">
       <ul class="container-nav-menu">
         <li class="container-nav-menu-child">
           <a href="#">About</a></li>
@@ -22,7 +21,7 @@
         <li class="container-nav-menu-child">
           <a href="#">Update</a></li>
       </ul>
-      <img class="nav-img" src="Asset/images/cart-icon.svg" alt="shopping-cart">
+      <img class="nav-img-cart" src="Asset/images/cart-icon.svg" alt="shopping-cart">
     </nav>
   </header>
 
@@ -108,8 +107,10 @@
       <h3>Sign-up for Updates</h3>
       <p>Stay updated on our latest product releases, be first to find out about <br>upcoming sales, and get free style tips
         from our blog. <a href="">Unsubcribe</a> at any time.</p>
-      <input type="text" value="Your Email">
+      <form>
+        <input type="text" value="Your Email">
       <button>Subscribe</button>
+      </form>
     </div>
   </div>
 
@@ -135,4 +136,6 @@
         <a href="#">Google+</a></li>
     </ul>
   </footer>
+  <script src="js/script.js">  
+  </script>
 </body>
