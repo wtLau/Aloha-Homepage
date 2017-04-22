@@ -86,7 +86,7 @@ body {
   color: #2d2d2d;
   font-family: "raleway";
   font-weight: normal;
-  font-size: normal;
+  font-style: normal;
 }
 /*---------------Nav---------------*/
 
@@ -294,30 +294,35 @@ button:hover {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 50px 20px;
+  padding: 4rem 1.5rem;
+  font-family: "raleway";
+  font-weight: bold;
   color: #ffffff;
   background-color: #242424;
 }
 .container-footer-copyright {
-  margin: 20px;
+  margin: .5rem;
   text-align: center;
 }
 .container-footer-contacts {
-  margin: 5px;
+  margin: .5rem;
 }
 .container-footer-contacts a {
    text-decoration: underline;
    color: #ffffff;
 }
 .container-footer-address {
-  margin: 5px;
+  margin: .5rem;
   text-align: center;
   color: #969696;
 }
 .container-footer-media {
   display: flex;
-  margin: 20px;
+  margin: 1.5rem;
   flex-flow: row nowrap;
+}
+.container-footer-media li {
+  margin: .5rem;
 }
 
 /*----------Media-Queries----------*/
