@@ -18,16 +18,16 @@
       <ul class="container-nav-menu">
         <li class="container-nav-menu-child">
           <a href="#container-handcraft">About</a>
-          </li>
+        </li>
         <li class="container-nav-menu-child">
           <a href="#container-category">Shop</a>
-          </li>
+        </li>
         <li class="container-nav-menu-child">
           <a href="#container-products">Feature</a>
-          </li>
+        </li>
         <li class="container-nav-menu-child">
           <a href="#signup">Update</a>
-          </li>
+        </li>
       </ul>
       <img class="nav-img-cart" src="Asset/images/cart-icon.svg" alt="shopping-cart">
     </nav>
@@ -35,10 +35,10 @@
 
   <!-----------------Banner------------------>
 
-  <div class="herotext">
-    <div class="vertical-align">
+  <div class="container-hero-banner">
+    <div class="container-hero-text">
       <h6>new collection</h6>
-      <h1>Spring/Summer 2016</h1>
+      <h1>spring/summer 2016</h1>
     </div>
   </div>
 
@@ -77,7 +77,7 @@
 
   <div class="container-products" id="container-products">
     <h3>most-loved <span>products</span></h3>
-    <ul>
+    <ul data-flickity='{ "wrapAround": true }'>
       <li class="products">
         <img src="Asset/images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
         <span>
@@ -89,31 +89,34 @@
         <img src="Asset/images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
         <p>BAGS</p>
         <h3><a href="#">Blue Hipster Backpack</a></h3>
-        <p>$69.00</p></li>
+        <p>$69.00</p>
+      </li>
       <li class="products">
         <img src="Asset/images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
         <p>DEMIN</p>
         <h3><a href="#">Demin Overall Shorts</a></h3>
-        <p>$89.00</p></li>
+        <p>$89.00</p>
+      </li>
       <li class="products">
         <img src="Asset/images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
         <p>DRESSES</p>
         <h3>
           <a href="#">Pink Dotted Dress</a></h3>
-        <p>$99.00</p></li>
+        <p>$99.00</p>
+      </li>
     </ul>
   </div>
 
   <!-----------------Sign up------------------>
 
-  <div class="signup" id="signup">
-    <div class="vertical-align">
-      <h3>Sign-up for Updates</h3>
-      <p>Stay updated on our latest product releases, be first to find out about <br>upcoming sales, and get free style tips
+  <div class="container-signup" id="signup">
+    <div class="container-signup-text">
+      <h3>Sign-up for <span>Updates</span></h3>
+      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips
         from our blog. <a href="">Unsubcribe</a> at any time.</p>
       <form id="my-form">
-        <input type="text" id="my-test-input" value="Your Email"/>
-        <input type="submit"/>
+        <input type="text" id="my-test-input" placeholder="Your Email"/>
+        <input type="submit" />
       </form>
     </div>
   </div>

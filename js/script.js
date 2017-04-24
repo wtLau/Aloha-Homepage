@@ -19,7 +19,7 @@ $(function () {
     event.preventDefault();
     
     if ( $('#my-test-input').val()) {
-        alert('thanks for entering something.');
+        alert('Thanks for subscribing!');
         } else {
         alert('Please enter something.')
         }

@@ -128,30 +128,27 @@ header a {
 }
 /*----------------Banner--------------*/
 
-.herotext {
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  margin: 0px auto;
-  background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
-  url(../Asset/images/banner-girl.png),
+.container-hero-banner {
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+  url(../Asset/images/banner-girl.png) center 3rem,
   url(../Asset/images/flower-bkgd.jpg);
-  background-position: center;
-  background-size: contain;
+  background-size: cover, contain;
   background-repeat: repeat, no-repeat;
-  height: 300px;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
 }
-.vertical-align {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+.container-hero-text {
   color: white;
+  text-align: center;
 }
-.vertical-align h6{
+.container-hero-text h6{
   text-transform: uppercase;
+}
+.container-hero-text h1{
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 
 /*---------Hand Crafted Div-----------*/
@@ -287,18 +284,42 @@ header a {
 }
 /*--------------SignUp--------------*/
 
-.signup {
-  display: block;
-  text-align: center;
-  height: 200px;
-  font-size: 12px;
-  margin: 10px auto;
-  background-image: url(../Asset/images/wave-bkgd.jpg);
-  background-size: 100% 100%;background-repeat: no-repeat;
+.container-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin: .5rem 0;
+  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../Asset/images/wave-bkgd.jpg") no-repeat 50% 90%;
 }
-button:active,
-button:hover {
-  background-color: lightblue;
+.container-signup-text {
+  color: #ffffff;
+  text-align: center;
+  line-height: 2rem;
+}
+.container-signup-text h3 {
+  font-family: "playfair";
+  font-style: italic;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+.container-signup-text h3 span {
+  font-style: normal;
+  font-weight: bold;
+}
+.container-signup-text p a {
+  text-decoration: none;
+  color: white;
+}
+.my-form {
+  display: block;
+  margin: .5rem;
+  height: 2rem;
+  width: 5rem;
+  background: #ffffff;
+}
+.my-form input {
+  background-color: #e2574c;
 }
 
 /*--------------footer--------------*/
