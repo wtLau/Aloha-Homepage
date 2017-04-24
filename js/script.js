@@ -15,6 +15,13 @@
 
 $(function () {
   
+$('.container-products-list').flickity({
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true
+});
+
+
   $('#my-form').on('submit', function () {
     event.preventDefault();
     

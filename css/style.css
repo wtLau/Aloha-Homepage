@@ -445,6 +445,9 @@ header a {
     margin-top: 1.2%;
     order: 6;
   }
+  .products {
+    width: 50%;
+  }
 }
 @media all and (min-width: 1240px) {
 
