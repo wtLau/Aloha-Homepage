@@ -267,6 +267,9 @@ header a {
   align-items: center;
   justify-content: center;
 }
+.products p {
+  text-transform: uppercase;
+}
 .container-products h3 {
   font-family: "playfair";
   text-transform: capitalize;
@@ -280,7 +283,7 @@ header a {
   font-weight: bold;
 }
 .products {
-  width: 80%;
+  width: 100%;
   margin: 1rem;
   height: 26rem;
   text-align: center;
