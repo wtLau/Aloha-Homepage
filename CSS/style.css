@@ -264,14 +264,27 @@ header a {
 
 /*----------most loved product-----------*/
 
-.mostloved {
-  display: block;
-  text-align:center;
-  font-size: 12px;
-  margin: 10px auto;
-  height: 100px;
+.container-products {
+  display: flex;
+  margin: 1rem;
+  flex-flow: row wrap;
+  justify-content: center;
 }
-
+.products span{
+  align-items: center;
+  justify-content: center;
+}
+.container-products h3 {
+  font-family: "playfair";
+  text-transform: capitalize;
+  align-items: center;
+  font-style: italic;
+  font-size: 2rem;
+}
+.container-products h3 span {
+  font-style: normal;
+  font-weight: bold;
+}
 /*--------------SignUp--------------*/
 
 .signup {

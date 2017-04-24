@@ -13,8 +13,20 @@
 //   });
 // });
 
-$(function() {
+$(function () {
+  
+  $('#my-form').on('submit', function () {
+    event.preventDefault();
+    
+    if ( $('#my-test-input').val()) {
+        alert('thanks for entering something.');
+        } else {
+        alert('Please enter something.')
+        }
+  });
 
 
 
-});
+  
+  
+})
