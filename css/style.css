@@ -109,9 +109,9 @@ body {
 .container-nav-menu {
   display: flex;
   flex-grow: 2;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   order: 3;
-  margin: .5rem .5rem 0 .5rem;
   border-top: .1rem solid #d7d7d7;
 }
 .container-nav-menu-child {
@@ -147,7 +147,9 @@ header a {
 }
 .container-hero-text h1{
   text-transform: capitalize;
+  font-weight: bold;
   font-size: 2rem;
+  font-family: "playfair";
 }
 
 /*---------Hand Crafted Div-----------*/
@@ -172,7 +174,6 @@ header a {
   font-weight: bold;
 }
 .container-handcraft p {
-  font-size: 1rem;
   margin-top: 2rem;
   line-height: 2rem;
 }
@@ -374,9 +375,33 @@ header a {
 
 /*----------Media-Queries----------*/
 
-@media all and (min-width: 480px){
-  
+@media all and (min-width: 600px){
+  body {
+  font-size: 16px;
+  }
+  .container-nav{
+    flex-flow: row nowrap;
+  }
+  .nav-img-logo{
+    margin-right: 0;
+  }
+  .nav-img-cart{
+    margin-left: none;
+    padding: none;
+    margin: none;
+  }
+  .container-nav-menu {
+    order: 0;
+    flex-grow: initial;
+    border-top: none;
+    justify-content: space-around;
+    margin: none;
+  }
+  .container-nav-menu-child {
+    margin: .2rem;
+    padding: .2rem;
+  }
 }
-@media all and (min-width: 680px) {
+@media all and (min-width: 1240px) {
 
 }
