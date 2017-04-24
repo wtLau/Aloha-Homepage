@@ -81,7 +81,6 @@
 }
 
 body {
-  margin: 8px auto;
   font-size: 14px;
   color: #2d2d2d;
   font-family: "raleway";
@@ -352,7 +351,7 @@ header a {
 .container-footer-contacts {
   margin: .5rem;
 }
-.container-footer-contacts a {
+.container-footer a {
    text-decoration: underline;
    color: #ffffff;
 }
