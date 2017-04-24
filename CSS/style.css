@@ -262,10 +262,7 @@ header a {
 /*----------most loved product-----------*/
 
 .container-products {
-  display: flex;
-  margin: 1rem;
-  flex-flow: row wrap;
-  justify-content: center;
+  margin: 2.5rem 1rem;
 }
 .products span{
   align-items: center;
@@ -274,13 +271,27 @@ header a {
 .container-products h3 {
   font-family: "playfair";
   text-transform: capitalize;
-  align-items: center;
+  text-align: center;
   font-style: italic;
   font-size: 2rem;
+  margin: 1rem;
 }
 .container-products h3 span {
   font-style: normal;
   font-weight: bold;
+}
+.products {
+  width: 80%;
+  margin: 1rem;
+  height: 26rem;
+  text-align: center;
+  margin-right: .3rem;
+}
+.products h3 a {
+  text-decoration: none;
+  color: #e2574c;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 /*--------------SignUp--------------*/
 
