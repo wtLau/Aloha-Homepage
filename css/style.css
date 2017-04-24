@@ -189,7 +189,7 @@ header a {
 .container-category-men {
   background:
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/mens-category.jpg") no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 13rem;
   width: 100%;
   display: flex;
@@ -400,6 +400,50 @@ header a {
   .container-nav-menu-child {
     margin: .2rem;
     padding: .2rem;
+  }
+
+  .container-category-men {
+    width: 49.25%;
+    background-size: cover;
+    background-position: center right;
+    margin: initial;
+    height: 10rem;
+  }
+  .container-category-trends {
+    width: 24.25%;
+    background-size: cover;
+    background-position: center right;
+    height: 10rem;
+  }
+    .container-category-glasses {
+    width: 24.25%;
+    background-size: cover;
+    background-position: center right;
+    height: 10rem;
+  }
+  .container-category-sale {
+    width: 24.25%;
+    background-size: cover;
+    background-position: center right;
+    margin: initial;
+    height: 10rem;
+    margin-top: 1.2%;
+  }
+  .container-category-bags {
+    width: 24.25%;
+    background-size: cover;
+    background-position: center right;
+    height: 10rem;
+    margin: 0;
+    margin-top: 1.2%;
+  }
+    .container-category-women {
+    width: 49.25%;
+    background-size: cover;
+    background-position: center right;
+    height: 10rem;
+    margin-top: 1.2%;
+    order: 6;
   }
 }
 @media all and (min-width: 1240px) {
