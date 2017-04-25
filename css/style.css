@@ -130,11 +130,11 @@ header a {
 .container-hero-banner {
   display: flex;
   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
-  url(../Asset/images/banner-girl.png) center 3rem,
+  url(../Asset/images/banner-girl.png) center 10vw,
   url(../Asset/images/flower-bkgd.jpg);
   background-size: cover, contain;
   background-repeat: repeat, no-repeat;
-  height: 20rem;
+  height: 60vw;
   justify-content: center;
   align-items: center;
 }
@@ -189,9 +189,9 @@ header a {
 .container-category-men {
   background:
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/mens-category.jpg") no-repeat;
-  background-size: contain;
-  height: 13rem;
-  width: 100%;
+  background-size: cover;
+  height: 50vw;
+  width: 100vw;
   display: flex;
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -202,9 +202,8 @@ header a {
   background:
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/trends-category.jpg");
   background-size: cover;
-  height: 13rem;
-  /*center margin line is created by width %*/
-  width: 49%;
+  height: 50vw;
+  width: 49vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,8 +212,8 @@ header a {
   background: 
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/glasses-category.jpg");
   background-size: cover;
-  height: 13rem;
-  width: 49%;
+  height: 50vw;
+  width: 49vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,8 +222,8 @@ header a {
   background: 
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/sale-category.jpg");
   background-size: cover;
-  height: 13rem;
-  width: 49%;
+  height: 50vw;
+  width: 49vw;
   margin-top: .5rem;
   margin-bottom: .5rem;
   display: flex;
@@ -235,8 +234,8 @@ header a {
   background: 
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/bags-category.jpg");
   background-size: cover;
-  height: 13rem;
-  width: 49%;
+  height: 50vw;
+  width: 49vw;
   display: flex;
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -247,8 +246,8 @@ header a {
   background: 
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../Asset/images/womens-category.jpg");
   background-size: cover;
-  height: 13rem;
-  width: 100%;
+  height: 50vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +303,9 @@ header a {
   align-items: center;
   padding: 2rem 1rem;
   margin: .5rem 0;
-  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../Asset/images/wave-bkgd.jpg") no-repeat 50% 90%;
+  background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../Asset/images/wave-bkgd.jpg") bottom center;
+  background-size: cover;
+
 }
 .container-signup-text {
   color: #ffffff;
@@ -351,18 +352,20 @@ header a {
 .container-footer-copyright {
   margin: .5rem;
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 .container-footer-contacts {
   margin: .5rem;
 }
-.container-footer a {
+.container-footer-contacts a {
    text-decoration: underline;
    color: #ffffff;
 }
 .container-footer-address {
   margin: .5rem;
   text-align: center;
-  color: #969696;
+  color: #969696; 
+  padding-top: 1.5rem;
 }
 .container-footer-media {
   display: flex;
@@ -371,6 +374,15 @@ header a {
 }
 .container-footer-media li {
   margin: .5rem;
+}
+.container-footer-media a {
+  color: #ffffff;
+  margin: .4rem;
+}
+.media-display {
+  display: none;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 /*----------Media-Queries----------*/
@@ -403,50 +415,67 @@ header a {
   }
 
   .container-category-men {
-    width: 49.25%;
+    width: 49.25vw;
     background-size: cover;
     background-position: center right;
     margin: initial;
-    height: 10rem;
+    height: 30vw;
   }
   .container-category-trends {
-    width: 24.25%;
+    width: 24.25vw;
     background-size: cover;
     background-position: center right;
-    height: 10rem;
+    height: 30vw;
   }
     .container-category-glasses {
-    width: 24.25%;
+    width: 24.25vw;
     background-size: cover;
     background-position: center right;
-    height: 10rem;
+    height: 30vw;
   }
   .container-category-sale {
-    width: 24.25%;
+    width: 24.25vw;
     background-size: cover;
     background-position: center right;
     margin: initial;
-    height: 10rem;
+    height: 30vw;
     margin-top: 1.2%;
   }
   .container-category-bags {
-    width: 24.25%;
+    width: 24.25vw;
     background-size: cover;
     background-position: center right;
-    height: 10rem;
+    height: 30vw;
     margin: 0;
     margin-top: 1.2%;
   }
     .container-category-women {
-    width: 49.25%;
+    width: 49.25vw;
     background-size: cover;
     background-position: center right;
-    height: 10rem;
+    height: 30vw;
     margin-top: 1.2%;
     order: 6;
   }
   .products {
     width: 50%;
+  }
+  .container-footer {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+  .container-footer-copyright {
+    text-align: initial;
+  }
+  .container-footer-address {
+    text-align: initial;
+  }
+  .container-footer-media {
+    flex-flow: column nowrap;
+    margin: initial;
+  }
+  .media-display {
+    display: initial;
   }
 }
 @media all and (min-width: 1240px) {
