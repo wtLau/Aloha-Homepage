@@ -23,7 +23,7 @@ $('.container-products-list').flickity({
 });
 
 
-  $('#my-form').on('submit', function () {
+  $('.my-form').on('submit', function () {
     event.preventDefault();
     
     if ( $('#my-test-input').val()) {
