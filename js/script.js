@@ -17,8 +17,9 @@ $(function () {
   
 $('.container-products-list').flickity({
   cellAlign: 'left',
-  contain: true,
-  wrapAround: true
+  wrapAround: true,
+  groupCells: true,
+  freeScroll: true,
 });
 
 

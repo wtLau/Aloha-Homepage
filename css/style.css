@@ -134,7 +134,7 @@ header a {
   url(../Asset/images/flower-bkgd.jpg);
   background-size: cover, contain;
   background-repeat: repeat, no-repeat;
-  height: 60vw;
+  height: 30rem;
   justify-content: center;
   align-items: center;
 }
@@ -147,7 +147,6 @@ header a {
 }
 .container-hero-text h1{
   text-transform: capitalize;
-  font-weight: bold;
   font-size: 2rem;
   font-family: "playfair";
 }
@@ -288,6 +287,7 @@ header a {
   height: 26rem;
   text-align: center;
   margin-right: .3rem;
+  color: #969696;
 }
 .products h3 a {
   text-decoration: none;
@@ -301,7 +301,7 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   margin: .5rem 0;
   background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../Asset/images/wave-bkgd.jpg") bottom center;
   background-size: cover;
@@ -413,28 +413,30 @@ header a {
     margin: .2rem;
     padding: .2rem;
   }
-
+.container-hero-text h1 {
+  font-size: 3rem;
+}
   .container-category-men {
-    width: 49.25vw;
+    width: 49.5%;
     background-size: cover;
     background-position: center right;
     margin: initial;
     height: 30vw;
   }
   .container-category-trends {
-    width: 24.25vw;
+    width: 24.5%;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
     height: 30vw;
   }
     .container-category-glasses {
-    width: 24.25vw;
+    width: 24.5%;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
     height: 30vw;
   }
   .container-category-sale {
-    width: 24.25vw;
+    width: 24.5%;
     background-size: cover;
     background-position: center right;
     margin: initial;
@@ -442,17 +444,17 @@ header a {
     margin-top: 1.2%;
   }
   .container-category-bags {
-    width: 24.25vw;
+    width: 24.5%;
     background-size: cover;
-    background-position: center right;
+    background-position: center bottom;
     height: 30vw;
     margin: 0;
     margin-top: 1.2%;
   }
     .container-category-women {
-    width: 49.25vw;
+    width: 49.5%;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
     height: 30vw;
     margin-top: 1.2%;
     order: 6;
@@ -479,5 +481,7 @@ header a {
   }
 }
 @media all and (min-width: 1240px) {
-
+.products {
+  width: 25%;
+}
 }
